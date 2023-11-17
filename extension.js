@@ -21,7 +21,7 @@ function runCypressCommand() {
         `cd ${currentlyOpenTabfilePath.replace( //remove the filename from the path
           /[^\/]*$/,
           ""
-        )} && npx cypress open --config testFiles="${currentlyOpenTabfilePath}"`
+        )} && npx cypress open --spec "${currentlyOpenTabfilePath}"`
       );
 }
 /**
